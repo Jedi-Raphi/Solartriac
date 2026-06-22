@@ -5,7 +5,25 @@ void target_serial() {
       char character = Serial.read();
       targetStr += String(character);
     }
-    target = targetStr.toFloat();
+    Serial.println(targetStr);
+     target = targetStr.toFloat();
+    //powerPercentage = targetStr.toFloat();
+   // wait_time = powerPercentage_to_wait(powerPercentage);
+  }
+}
+
+
+void pwr_percentage_serial() {
+  if (Serial.available() > 0) {
+    String percStr = "";
+    while (Serial.available()) {
+      char character = Serial.read();
+      percStr += String(character);
+    }
+    Serial.println(percStr);
+     powerPercentage = percStr.toFloat();
+    //powerPercentage = targetStr.toFloat();
+   // wait_time = powerPercentage_to_wait(powerPercentage);
   }
 }
 
@@ -13,7 +31,7 @@ void target_serial() {
 void menu() {  // utile pour simuler valeurs pour les tests
   if (Serial.available() > 0) {
     int readchar = Serial.read();
-    switch (readchar) {
+    switch (readchar) { 
       case '1':
         Temperature += 5;
         break;
@@ -87,6 +105,9 @@ void show_data() {
   Serial.print("\t");
   Serial.print("powerPercentage:");
   Serial.print(powerPercentage);
+  Serial.print("\t");
+  Serial.print("wait_time:");
+  Serial.print(wait_time);
   Serial.print("\t");
   Serial.print("cycle:");
   Serial.print(cycle);
