@@ -10,7 +10,7 @@ WebServer server(80);
 //HTTPClient http;
 
 bool MQTT_enable = true;
-const char MQTT_broker_addr[] = "192.168.68.151";
+const char MQTT_broker_addr[] = "192.168.68.128";
 const int MQTT_broker_port = 1883;
 const char id[] = "Water_tank1";
 MQTTClient mqtt = MQTTClient(256);
@@ -204,6 +204,11 @@ void MQTT_connect(char user[], char pass[]) {
     Serial.println("- topic: " + topic);
     Serial.println("- payload:");
     Serial.println(payload);
+
+    if (topic == String("HEMS/Water_tank1/actions/pwr_perc"))
+    {
+      powerPercentage = 100.0 * payload.toFloat();
+    }
   }
 
 
