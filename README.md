@@ -1,7 +1,7 @@
 ## Proof for triac calculation
 
-We need to find a way to lineralise the relation between $p \in [0;1]$ and the energy delivered ($\int_{\theta}^{\pi}sin^2(x)\,dx$)
-we need to find a relation between p and $\theta$ that acomplish it
+We need to find a way to fin a relation between p and $\theta$   So that $p \in [0;1]$ and the energy delivered ($\int_{\theta}^{\pi}sin^2(x)\,dx$) are propotional
+
 
 $$\begin{array}{rcl}
  \int_{\theta}^{\pi}sin^2(x)\,dx & = & \int_{\theta}^{\pi}\frac{1-cos(2x)}{2}\,dx \\
