@@ -8,7 +8,11 @@
       "improv": false,
       "parts": [
         {
+<<<<<<< HEAD
           "path": "Solartriac.ino.merged.bin",
+=======
+          "path": "firmware-merged.bin",
+>>>>>>> ff5c75802e75dc50024855a3edb77b233b408562
           "offset": 0
         }
       ]
