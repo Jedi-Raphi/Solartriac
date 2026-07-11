@@ -1,3 +1,9 @@
+
+## intall guide 
+<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+
+<esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+
 ## Proof for triac calculation
 
 We need to find a way to fin a relation between p and $\theta$   So that $p \in [0;1]$ and the energy delivered ($\int_{\theta}^{\pi}sin^2(x)\,dx$) are propotional
