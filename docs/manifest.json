@@ -8,7 +8,7 @@
       "improv": false,
       "parts": [
         {
-          "path": "https://github.com/votre-user/votre-repo/releases/latest/download/firmware.bin",
+          "path": "https://github.com/Jedi-Raphi/Solartriac/releases/download/v1.0.0/firmware-merged.bin",
           "offset": 0
         }
       ]
