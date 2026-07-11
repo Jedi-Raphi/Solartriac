@@ -1,8 +1,22 @@
 
 ## intall guide 
-<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 
-<esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+
+
+https://jedi-raphi.github.io/Solartriac/
+
+
+click connect 
+
+choose the port
+
+install
+
+then open console and reset esp
+quickly press any key afer boot to enter config mode
+
+enter network and mqtt info
+
 
 ## Proof for triac calculation
 
